@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Silkscreen&display=swap');
+
+/* Reset default styles */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Body styles */
+body {
+	min-height: 100vh;
+	background-image: url("bg-gif-main.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Header styles */
+.header {
+    font-family: 'Silkscreen', sans-serif;
+	background-color: rgba(0, 0, 0, 0.1);
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 25px 20px;
+	backdrop-filter: blur(50px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Pokedex Logo styles */
+.logo {
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+/* Navbar styles */
+.navbar a {
+	font-size: 17px;
+	color: black;
+	text-decoration: none;
+	margin-left: 30px;
+	border: 2px solid black; 
+	padding: 9px 16px; 
+	transition: border-radius 0.3s; 
+}
+  
+.navbar a:hover {
+	border-radius: 50%;
+	border-color: white;
+	color: white;
+}
+
+.icons{
+	font-size: 44.8px;
+	color: black;
+	cursor: pointer;
+	display: none;
+}
+/* End of header styles */
+
+/* Main title styles */
+.maintitle{
+    font-family: 'Silkscreen', sans-serif;
+	color: black;
+	opacity: 70%;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+/* Container for left and right content styles */
+.container-both {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+/* Search bar styles */
+.search-bar {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto 20px auto; 
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+  
+.search-bar input {
+    font-family: 'Silkscreen', sans-serif;
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+}
+  
+/* Go button styles */
+.search-bar button {
+    font-family: 'Silkscreen', sans-serif;
+    padding: 0 40px;
+    height: 100%;
+    background: #EE9F18;
+    color: white;
+    font-size: 36px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+  
+.search-bar ::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+/* Hover effect on the "GO" button */
+.search-bar button:hover {
+    background-color: #fff;
+    color: #EE9F18;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+  
+.container-left input {
+    width: 60%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #4d7c9e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Left content styles (Pokemon cards) */
+.left-content {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 2.5rem;
+    cursor: pointer;
+}
+  
+.card {
+    width: 100%;
+    max-width: 200px;
+    background-color: rgba(232, 187, 135, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Right content styles (Pokeinfo) */
+.right-content {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px; 
+    background-color: #f8f8f8af; 
+}
+  
+.right-content img {
+    margin: 1.5rem;
+    height: 260px;
+    width: 75%;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0; 
+}
+  
+.right-content h1 {
+    background-color: #b74555;
+    padding: 1rem;
+    margin-top: -10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Pokemon type styles (In Pokeinfo) */
+.types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.types h2 {
+    font-size: 17px;
+    font-weight: bold;
+}
+  
+.types .group {
+    color: black;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+/* Pokemon abilities styles */
+.abilities {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.abilities h2{
+    font-size: 17px;
+    font-weight: bold;
+}
+  
+.abilities .group {
+    background-color: #EE9F18;
+    color: black;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+/* Pokemon stats styles */
+.base-stat {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Navigation button styles */
+.btn-group {
+    display: contents;
+}
+  
+.btn-group button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #b74555;
+    border-radius: 8px;
+}
+
+/* Hover effect on Navigations button */
+.btn-group button:hover {
+    background-color: #fff;
+    color: #b74555;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+/* Hover effect on Pokemon card */
+.card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Adjust for various screen sizes */
+@media (max-width: 600px) {
+    .left-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .container-left input {
+        width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .right-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .abilities {
+        width: 100%;
+    }
+
+    .btn-group button {
+        width: 100%;
+    }
+}
